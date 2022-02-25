@@ -16,8 +16,8 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="./icon.png" alt="" width="60" height="44"class="d-inline-block align-text-top">
-      <b>ToDo</b>
+      <img src="./icon.png" alt="" width="70" height="54"class="d-inline-block align-text-top">
+      <b style="color: white;">ToDo</b>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,17 +25,20 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item active">
-          <a class="nav-link" href="#"><b>Todo List</b><span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"><b style="color: white;">Todo List</b><span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="index.html" onclick="loggedOut()"><b>Log-Out</b></a>
+          <a class="nav-link" href="index.html" onclick="loggedOut()" style="color: white;"><b>Log-Out</b></a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+      <div id="todoBox">
+        <p id="demo" style="color: white;margin-left: 50px;"></p>
+      </div>
       
-      <p id="demo"></p>
+    
       <script src="casestudy.js"></script>
 </body>
 </html>

@@ -1,29 +1,37 @@
 .bodyportion{
-    background-image: url("./todo1.jpg");
-    background-size: cover;
+    background-image: url("./todo7.jpg");
+    background-size:cover;
 }
 .navbar{
-    background-color: rgb(236, 158, 195);
+    background-color: rgba(4, 1, 10, 0.753);
 }
 .bodyportionTodo{
-    background-color: rgb(124, 140, 230);
+    background-image: url("./todo7.jpg");
+    background-size:contain;
 }
 .myMargin1{
     border: 1px solid rgb(107, 106, 106);
     border-radius: 30px;
     padding: 0%;
-    background-color: rgb(208, 227, 243);
+    background-color: rgba(11, 14, 15, 0.295);
 }
 .btn{
     width: 100%;
     /* border-radius: 300px; */
 }
 .page{
-    margin-top: 180px;
+    margin-top: 120px;
     /* margin-left: 50px; */
 }
 li{
     list-style:none;
     font-family:Georgia, 'Times New Roman', Times, serif
     
+}
+#todoBox{
+    width: 45%;
+    border: 1px solid rgb(8, 5, 5);
+    border-radius: 30px;
+    padding: 0%;
+    background-color: rgba(11, 14, 15, 0.678);
 }

@@ -1,7 +1,7 @@
 var count1=0;
 var demo=document.getElementById('demo');
 var xhttp=new XMLHttpRequest();
-// const printing=new Promise(function(resolve,reject){
+// const todos=new Promise(function(resolve,reject){
     xhttp.onreadystatechange= function(){
         if (this.readyState==4 && this.status==200){
             var response=JSON.parse(this.responseText);
@@ -16,8 +16,8 @@ var xhttp=new XMLHttpRequest();
                 // console.log(stat);
                 
                 if(stat==false){
-                    var count1=5;
-                    output +="<li><input type='checkbox' id='check' onchange=doalert(check,count1)>" + res+"</li>";
+
+                    output +="<li><input type='checkbox' id='check' onchange=doalert(check)>" + res+"</li>";
                     demo.innerHTML=output;
                     // callback1(output)
                     
@@ -39,7 +39,7 @@ var xhttp=new XMLHttpRequest();
     }
     xhttp.open("GET","https://jsonplaceholder.typicode.com/todos",true);
     xhttp.send(); 
-
+// });
 
 function loggedOut(){
     alert("Are you sure to log-out?")
@@ -50,12 +50,12 @@ function doalert(checkboxElem) {
     alert ("hi");
     
   } else {
-    
-    // alert(`One Todo is completed`);
+    checkboxElem
     count1=count1+1;
     console.log(count1);
+    // alert(`${count1} Todo is completed`);
     if(count1===5){
-        alert("Congrats.5 Tasks have been successfully completed..!!!");
+        alert("Congrats!!!!! 5 Tasks have been successfully completed..!!!");
     }
   }
 }
